@@ -1,0 +1,157 @@
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	text-decoration: none;
+}
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/* 全域 border box */
+
+.container{
+	padding-right: 15px;
+	padding-left: 15px;
+	margin: 0 auto;
+}
+/* CSS Reset end */
+.ff-minor{
+    font-family: 'Baloo Tamma 2' , sans-serif;
+}
+.goal {
+	font-size: 14px;
+	color: #000027;
+	line-height: 20px;
+}
+.goal2 {
+	font-size: 16px;
+	line-height: 20px;
+}
+.h3{
+	font-size: 32px;
+	line-height: 56px;
+}
+.product {
+		background-color:#F8F9FA;;
+		h2{
+			font-size: 32px;
+			letter-spacing: 3px;
+		}  
+		.progress {
+			background: #EEEEEE;
+			border-radius: 8px;
+			border-radius: 8px;
+		}	
+     }
+	
+.bd-callout {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #e9ecef;
+    border-left-width: 0.25rem;
+    border-radius: 0.25rem;
+	background: #FFFFFF;
+}
+.bd-callout-warning {
+    border-left-color: #FFDF65;
+}
+
+.project {
+	background: white;
+	.project-content{
+		line-height: 2rem;
+	}
+	img {
+		
+		object-fit: cover;
+	}
+}
+.sticky-link{
+	font-weight: bold;
+    border-bottom: 2px solid $warning;
+}
+
+.proposer{
+	background: #FFFFFF;
+	border: 1px solid #E5E5E5;
+	border-radius: 8px;
+	border-radius: 8px;
+	img {
+		border: 2px solid $warning;
+		border-radius: 66px;
+	}
+}
+.nav-top{
+    top: 80px;
+}
+.nav-h{
+    height: calc(100vh - 80px);
+}
+
+.selectproject{
+	.card{
+	   border-radius: 1.25rem
+	}
+    h5{
+        font-size: 18px;
+    }
+	article{
+		font-size: 16px;
+		letter-spacing: 0.7px;
+		text-align: justify;
+		line-height: 24px;
+	}
+	img{
+		object-fit: cover;
+	}
+}
+
+.sponsor-fixed{
+    z-index: 999;
+    border-radius: 99px;
+}
+@include pad(){
+    .sponsor-fixed{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        border-radius: 0px;
+    }
+}
+.product-image{
+	border-radius: 33px;
+	object-fit: cover;
+}
+@include mobile(){
+	.product-image{
+		border-radius: 20px;
+		object-fit: cover;
+		margin-bottom: 10px;
+	}
+}
+
